@@ -9,20 +9,76 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
+
+        <img src="logo.jpeg" ALIGN=LEFT width=10%>
         <div class="container">
             <header>
-
                 <p>WEB TECH</p>
-                <nav>
-                    <ul>
-                        <li><a href="#">Homepage</a></li>
-                        <li><a href="#">Issues</a></li>
+                <div class="navbar">
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">Issues</a></li>
+                            <ul class="dropdown">
+                                <li><a href="#">Issue 1</a></li>
+                                <li><a href="#">Issue 2</a></li>
+                                <li><a href="#">Issue 3</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Documentation</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Disclaimer</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-    </body>
-</html>
+                    </div>
+                </header>
+            </div>
+
+            <footer>
+                <div class="container">
+                    <div class="footer">
+                        <div class="copy-right">
+                            <p>This project is a non-commercial work which it
+                                was
+                                created by Lucas Dans, Mathias Rønning,
+                                Umut Kucuk for the final exam of the
+                                <a
+                                    href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/454464">Information
+                                    Modelling and Web Technologies course</a>,
+                                taught by Professor
+                                <a
+                                    href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio
+                                    Vitali</a>.
+                                The content is licensed under
+                                <a
+                                    href="https://creativecommons.org/licenses/by-nc/4.0/">CC
+                                    BY-NC 4.0</a></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="back-to-top hidden">UP</button>
+            </footer>
+            <script>
+                const showOnPx = 100;
+                const backToTopButton = document.querySelector(".back-to-top")
+                
+                const scrollContainer = () => {
+                  return document.documentElement || document.body;
+                };
+                
+                document.addEventListener("scroll", () => {
+                  if (scrollContainer().scrollTop > showOnPx) {
+                    backToTopButton.classList.remove("hidden")
+                  } else {
+                    backToTopButton.classList.add("hidden")
+                  }
+                })
+                
+                const goToTop = () => {
+                    document.body.scrollIntoView();
+                  };
+                
+                  backToTopButton.addEventListener("click", goToTop)
+                
+            </script>
+                
+       
+
+        </body>
+    </html>
