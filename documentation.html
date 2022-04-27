@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Web Tech</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"> <img src="logo.png"
+            alt="Logo" style="width: 50%;margin-left: 10px;"></a>
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown px-2">
+            <a class="nav-link dropdown-toggle" href="#"
+              id="navbardrop" data-bs-toggle="dropdown">
+              Issues
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./issue1.html">Issue 1</a>
+              <a class="dropdown-item" href="./issue2.html">Issue 2</a>
+              <a class="dropdown-item" href="./issue3.html">Issue
+                3</a>
+            </div>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="./documentation.html">Documentation</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="./disclaimer.html">Disclaimer</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="text-center">
+      <div class="big-header">
+        The Disaster Art
+      </div>
+      <div class="short-description">
+        A magazine about various kinds of art.
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="main-title">Documentation</h1>
+      <h2>The purpose and the Scope of the Project</h2>
+      <p>This project is carried out by Lucas Dans, Mathias Rønning, Umut
+        Kucuk
+        for the final exam of the Web Technologies lesson held by
+        professor
+        Fabio Vitali at the University of Bologna
+        Three different article has been choosen in the fields of
+        cinema, music
+        and comic books.</p>
+      <h2>Markup</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+        saepe
+        nostrum nam repudiandae quibusdam fugit explicabo impedit a
+        reiciendis
+        voluptatem.</p>
+      <h2>Styles</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+        saepe
+        nostrum nam repudiandae quibusdam fugit explicabo impedit a
+        reiciendis
+        voluptatem.</p>
+      <h2>Layout</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+        saepe
+        nostrum nam repudiandae quibusdam fugit explicabo impedit a
+        reiciendis
+        voluptatem.</p>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="copy-right">
+            <p>This project is a non-commercial work which it
+              was
+              created by Lucas Dans, Mathias Rønning,
+              Umut Kucuk for the final exam of the
+              <a
+                href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2021/454464">Information
+                Modelling and Web Technologies course</a>,
+              taught by Professor
+              <a
+                href="https://www.unibo.it/sitoweb/fabio.vitali/en">Fabio
+                Vitali</a>.
+              The content is licensed under
+              <a
+                href="https://creativecommons.org/licenses/by-nc/4.0/">CC
+                BY-NC 4.0</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="back-to-top hidden">UP</button>
+    </footer>
+    <script>
+    const showOnPx = 100;
+    const backToTopButton = document.querySelector(".back-to-top")
+
+    const scrollContainer = () => {
+        return document.documentElement || document.body;
+    };
+
+    document.addEventListener("scroll", () => {
+        if (scrollContainer().scrollTop > showOnPx) {
+            backToTopButton.classList.remove("hidden")
+        } else {
+            backToTopButton.classList.add("hidden")
+        }
+    })
+
+    const goToTop = () => {
+        document.body.scrollIntoView();
+    };
+
+    backToTopButton.addEventListener("click", goToTop)
+
+</script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+  </body>
+
+</html>tml>tml>tml>

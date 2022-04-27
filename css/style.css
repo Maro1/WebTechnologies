@@ -1,70 +1,91 @@
 :root {
-  --background: rgb(96, 74, 139);
-  --background-dark: rgb(61, 36, 129);
-  --background-light: rgb(117, 145, 153);
-  --foreground: rgb(201, 218, 221);
+  --background: rgb(60, 60, 60);
+  --background-dark: rgb(255, 255, 255);
+  --background-light: rgb(150, 150, 150);
+  --foreground: rgb(0, 0, 0);
+  --foreground-dark: rgb(150, 102, 34);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 
 body {
-    margin: 0;
-    background: var(--background-light);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 300;
-    height: 5000px;
+  margin: 0;
+  background: var(--background-light);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  height: 5000px;
 }
 
 .navbar-custom {
-    background-color: var(--background);
+  background-color: white;
 }
 
 .navbar-custom .navbar-brand {
-    color: var(--foreground);
-    width: 10%;
-    font-size: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--foreground);
+  width: 10%;
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar-custom .navbar-text {
-    color: var(--foreground);
+  color: black;
+  text-shadow: 1px 1px black;
 }
 
 .navbar-custom .navbar-nav .nav-link {
-    color: var(--foreground);
-    text-transform: uppercase;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
 }
 
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: #ffffff;
+  color: gray;
 }
-.navbar-nav > li > .dropdown-menu { 
-  background-color: var(--background); 
+
+.navbar-nav>li>.dropdown-menu {
+  background-color: white;
   font-size: larger;
 }
 
-.navbar-nav > li > .dropdown-menu a { 
+.navbar-nav>li>.dropdown-menu a {
   color: var(--foreground);
 }
 
-.navbar-nav > li > .dropdown-menu a:hover { 
+.navbar-nav>li>.dropdown-menu a:hover {
   background-color: var(--background-dark);
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0; 
- }
+  display: block;
+  margin-top: 0;
+}
+
+
+.main-title {
+  color: var(--foreground);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+
 
 
 /** Footer **/
-
 footer {
-  background-color: var(--background-dark);
-  color: #f9f9f9;
-  padding: 2rem 0;
+  background-color: white;
+}
+
+.custom-footer {
+  text-align: center;
+  position: fixed;
+  right: 25%;
+  left: 25%;
+  bottom: 10%;
 }
 
 .footer-content {
@@ -75,12 +96,14 @@ footer {
 .copy-right {
   font-size: 1.3rem;
   letter-spacing: .2rem;
+  color: black;
 
 }
 
 /** Top Button **/
 
 .back-to-top {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: fixed;
   right: 2rem;
   bottom: 2rem;
@@ -99,4 +122,22 @@ footer {
 
 .hidden {
   display: none;
+}
+
+.big-header {
+  font-size: 12em;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: rgb(0.1, 0.1, 0.1);
+  text-shadow: 5px 5px 5px rgba(122, 201, 249, 0.8), 0 0 10px rgba(255, 76, 152, 0.8);
+}
+
+.main-img {
+  align-items: center;
+}
+
+.short-description {
+  margin-top: 2em;
+  margin-bottom: 5em;
+  font-size: 4em;
 }
