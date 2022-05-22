@@ -6,17 +6,28 @@ html * {
 
 body {
     background-color: #222222 !important;
+    background-image: url("images/background.avif");
+    background-attachment: fixed;
 }
 
 body * {
     font-size: 1.5rem;
-    text-shadow: 2px 2px 2px rgba(122, 201, 249, 0.8), 0 0 4px rgba(255, 76, 152, 0.8);
     color: aliceblue;
+    text-shadow:
+        0 0 3px #fff,
+        0 0 7px #fff,
+        0 0 15px #fff,
+        0 0 30px rgb(118, 115, 255),
+        0 0 40px rgb(158, 173, 255)
 }
 
 p {
     line-height: 2em;
     padding-top: 5em;
+}
+
+q {
+    text-shadow: inherit;
 }
 
 h1 {
@@ -34,6 +45,14 @@ img {
     width: 100% !important;
 }
 
+.full-width-image {
+    width: 100%;
+}
+
+.full-width-image img {
+    width: 100%;
+}
+
 .articles {
     display: flex;
     margin: 10px;
@@ -45,6 +64,12 @@ img {
 
 .question {
     padding-top: 2rem;
+    text-shadow:
+        0 0 3px #fff,
+        0 0 7px #fff,
+        0 0 15px #fff,
+        0 0 30px rgb(255, 115, 115),
+        0 0 40px rgb(255, 158, 158)
 }
 
 .answer {
@@ -54,6 +79,10 @@ img {
 
 .italic {
     font-style: italic;
+    text-shadow:
+        0 0 3px #fff,
+        0 0 7px #fff,
+        0 0 10px rgba(163, 163, 163, 0.167)
 }
 
 .figure-caption * {
