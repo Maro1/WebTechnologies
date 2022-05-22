@@ -2,7 +2,10 @@ body {
     margin: 0;
     background-color: lightsalmon;
     font-family: 'Space Grotesk', sans-serif;
-
+    background: url("https://sothebys-md.brightspotcdn.com/dims4/default/12b122d/2147483647/strip/true/crop/1412x2000+0+0/resize/800x1133!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F23%2F8e%2F48694e5d43cdb0a8f58908ada8a7%2Fmiol27-c4hdl-04.jpg");
+    letter-spacing: -0.7px;
+    word-spacing: -0.3px;
+    font-size: 19px;
 
 }
 
@@ -13,6 +16,21 @@ img {
     margin: 0 10px;
 }
 
+h1 {
+    color:darkblue;
+}
+
+h2 {
+    color:darkred;
+}
+
+.image-type-1 {
+    transform: rotate(5deg);
+}
+
+.image-type-2 {
+    transform: rotate(-5deg);
+}
 
 a {
     text-decoration: none;
@@ -39,7 +57,8 @@ a {
     height: 50px;
     width: 100px;
     background-color: darkblue;
-    transform: rotate(90deg);
+    transform: rotate(-60deg);
+    margin: 10px 0 0 0;
 }
 
 .circle-1 {
@@ -58,23 +77,15 @@ a {
     transform: rotate(45deg);
 }
 
-.triangle-3 {
-    width: 0;
-    height: 0;
-    border-top: 40px dotted transparent;
-    border-right: 80px solid darkred;
-    border-bottom: 40px solid transparent;
-    transform: rotate(60deg);
-}
+
 
 .trapezoid-1 {
-    border-bottom: 50px solid #555;
+    border-bottom: 50px solid rgb(134, 0, 0);
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     height: 0;
     width: 125px;
-    text-align: center;
-    display: flex;
+    transform: rotate(-15deg);
 }
 
 
@@ -85,20 +96,18 @@ a {
 }
 
 .article1 {
-    border: dashed darkblue 5px;
     text-align: center;
     margin: 0 10px;
 
 }
 
 .article2 {
-    border: dotted darkred 5px;
+    border: dashed darkred 5px;
     text-align: center;
     margin: 0 10px;
 }
 
 .article3 {
-    border: solid darkblue 5px;
     text-align: center;
     margin: 0 10px;
 }
