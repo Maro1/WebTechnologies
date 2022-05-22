@@ -2,7 +2,7 @@ body {
     margin: 0;
     background-color: lightsalmon;
     font-family: 'Space Grotesk', sans-serif;
-    
+
 
 }
 
@@ -23,21 +23,76 @@ a {
     font-style: italic;
 }
 
+.shapes {
+    display: flex;
+}
+
+.triangle-1 {
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-right: 80px solid darkred;
+    border-bottom: 40px solid transparent;
+}
+
+.rectangle-1 {
+    height: 50px;
+    width: 100px;
+    background-color: darkblue;
+    transform: rotate(90deg);
+}
+
+.circle-1 {
+    background: darkblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.triangle-2 {
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-right: 80px solid darkred;
+    border-bottom: 40px solid transparent;
+    transform: rotate(45deg);
+}
+
+.triangle-3 {
+    width: 0;
+    height: 0;
+    border-top: 40px dotted transparent;
+    border-right: 80px solid darkred;
+    border-bottom: 40px solid transparent;
+    transform: rotate(60deg);
+}
+
+.trapezoid-1 {
+    border-bottom: 50px solid #555;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 125px;
+    text-align: center;
+    display: flex;
+}
+
+
 .articles {
     display: flex;
     margin: 10px;
-   /** overflow: auto; **/
+    /** overflow: auto; **/
 }
 
 .article1 {
-    border: solid darkblue 5px;
+    border: dashed darkblue 5px;
     text-align: center;
     margin: 0 10px;
-    
+
 }
 
-.article2{
-    border: solid darkblue 5px;
+.article2 {
+    border: dotted darkred 5px;
     text-align: center;
     margin: 0 10px;
 }
