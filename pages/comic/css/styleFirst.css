@@ -23,9 +23,42 @@ h1 {
     color:darkblue;
 }
 
+/** Hover h1 **/
+
+h1::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgb(255, 0, 0);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+
+
+  h1 {
+    position: relative;
+  }
+
+
+/** Hoover h1 end **/
+
+
 h2 {
     color:darkred;
 }
+
 
 .image-type-1 {
     transform: rotate(5deg);
@@ -34,6 +67,16 @@ h2 {
 .image-type-2 {
     transform: rotate(-5deg);
 }
+
+/** image hover **/
+
+.zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+/** image hover ends **/
+
 
 #furry {
     border:dashed brown 4px;
@@ -115,3 +158,10 @@ a {
     text-align: center;
     margin: 0 10px;
 }
+
+
+.verticalRight {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
