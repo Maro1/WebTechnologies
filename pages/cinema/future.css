@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 @import url(//db.onlinewebfonts.com/c/73b2205b7e71a51b4df11d2837ad8185?family=Ailerons);
 
-html * {}
-
 body {
     background-color: #222222 !important;
     background-image: url("images/background.avif");
@@ -54,6 +52,10 @@ img {
 
 .article {
     margin: 1%;
+}
+
+.article-title {
+    text-align: center;
 }
 
 iframe {
