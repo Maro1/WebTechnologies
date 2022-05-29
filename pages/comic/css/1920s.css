@@ -1,9 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Space+Grotesk:wght@300&display=swap');
+
+
+
 body {
     margin: 0;
     background-color: lightsalmon;
     font-family: 'Space Grotesk', sans-serif;
-    background: url("https://sothebys-md.brightspotcdn.com/dims4/default/12b122d/2147483647/strip/true/crop/1412x2000+0+0/resize/800x1133!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F23%2F8e%2F48694e5d43cdb0a8f58908ada8a7%2Fmiol27-c4hdl-04.jpg");
+    background-image: url("../images/backgr.jpg");    
     letter-spacing: -0.7px;
+    background-attachment: fixed;
     word-spacing: -0.3px;
     font-size: 19px;
     color: black;
@@ -146,12 +152,16 @@ a {
     transform: rotate(45deg);
 }
 
+/**
 .container {
     display: flex;
     margin: 10px;
     justify-content: center;
     height: 100%;
 }
+
+trying bootstrap classes
+**/
 
 .image-desc {
     border: dashed darkgoldenrod 2px;
@@ -191,7 +201,7 @@ a {
     text-orientation: mixed;
 }
 
-/** border animation try **/
+/** border animation try 
 
 #furry {
     height: 100px;
@@ -212,4 +222,11 @@ a {
     }
   }
 
-/** border animation ends **/
+ border animation ends **/
+
+
+ .vl {
+  border-left: 6px solid #DB3334;
+  border-radius: 6px;
+  height: 84vh;
+}
