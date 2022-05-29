@@ -2,8 +2,7 @@
 @import url(//db.onlinewebfonts.com/c/73b2205b7e71a51b4df11d2837ad8185?family=Ailerons);
 
 body {
-    background-color: #222222 !important;
-    background-image: url("images/background.avif");
+    background-image: url("/resources/images/background.avif");
     background-attachment: fixed;
 }
 
@@ -46,13 +45,8 @@ h3 * {
     text-shadow: none;
 }
 
-img {
-    width: 100% !important;
-}
 
-.article {
-    margin: 1%;
-}
+
 
 .article-title {
     text-align: center;
@@ -63,22 +57,7 @@ iframe {
     /* other designs you want*/
 }
 
-.full-width-image {
-    width: 100%;
-}
 
-.full-width-image img {
-    width: 100%;
-}
-
-.articles {
-    display: flex;
-    margin: 5%;
-}
-
-.bold {
-    font-weight: bold;
-}
 
 .question {
     padding-top: 2rem;

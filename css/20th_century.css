@@ -2,12 +2,11 @@
 
 @font-face {
     font-family: Mooka;
-    src: url('data/mooka.mooka.otf');
+    src: url('/resources/fonts/mooka.mooka.otf');
 }
 
 body {
-    background-color: #222222 !important;
-    background-image: url("images/newspaper.jpg");
+    background-image: url("/resources/images/newspaper.jpg");
     background-attachment: fixed;
 }
 
@@ -57,7 +56,7 @@ iframe {
 }
 
 a:link {
-    color: #db5959;
+    color: #aa2727;
 }
 
 a:visited {
@@ -72,10 +71,10 @@ a:active {
     color: #d58585;
 }
 
-.article {
-    margin: 1%;
-    overflow: scroll;
-    height: 80vh;
+[type="radio"] {
+    background: #aa2727;
+
+
 }
 
 .vl {
@@ -98,25 +97,8 @@ a:active {
 
 .article-title {
     text-align: left;
-
 }
 
-.full-width-image {
-    width: 100%;
-}
-
-.full-width-image img {
-    width: 100%;
-}
-
-.articles {
-    display: flex;
-    margin: 5%;
-}
-
-.bold {
-    font-weight: bold;
-}
 
 .question {
     padding-bottom: 0em;
