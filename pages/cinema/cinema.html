@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/css/20th_century.css" type="text/css">
+    <link rel="stylesheet" href="/css/modern.css" type="text/css">
     <link rel="stylesheet" href="/css/common.css" type="text/css">
     <title>Cinema</title>
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -21,36 +21,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/index.html"> <img src="/logo.png" alt="Logo"
-                    style="max-width: 100px;margin-left: 10px;"></a>
-            <ul class="navbar-nav">
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown px-2">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
-                        Issues
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="/pages/comic/comicMain.html">Comics</a>
-                        <a class="dropdown-item" href="/pages/cinema/cinema.html">Cinema</a>
-                        <a class="dropdown-item" href="/pages/music/music.html">Music</a>
-                    </div>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="./documentation.html">Documentation</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="./about.html">About</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="./disclaimer.html">Disclaimer</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div id="custom-navbar">
+    </div>
     <div class="articles">
         <div class="d-flex flex-row">
             <div class="p-2 article">
@@ -70,12 +42,13 @@
         <button id="medieval">Medieval</button>
         <button id="1700s">1700s</button>
         <button id="1800s">1800s</button>
-        <button id="dadaism">Dadaism</button>
-        <button id="late-20th">Late 20th</button>
+        <button id="1920s">1920s</button>
+        <button id="modern">Modern</button>
         <button id="future">Future</button>
     </div>
 
-    <script src="cinema.js"></script>
+    <script src="/resources/scripts/styleSelector.js"></script>
+    <script src="/resources/scripts/navbar.js"></script>
 </body>
 
 </html>

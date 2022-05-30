@@ -8,20 +8,15 @@ function selectStyle(style) {
 
     document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 }
-
+$("#1700s").click(function() {
+    selectStyle("/css/1500-1800.css");
+})
+$("#1920s").click(function() {
+    selectStyle("/css/1920s.css");
+})
+$("#modern").click(function() {
+    selectStyle("/css/modern.css");
+})
 $("#future").click(function() {
     selectStyle("/css/future.css");
-    console.log("Future");
 })
-
-$("#late-20th").click(function() {
-    selectStyle("/css/20th_century.css");
-    console.log("Late 20th");
-})
-
-$("#dadaism").click(function() {
-    selectStyle("/css/1920s.css");
-    console.log("Dadaism");
-})
-selectStyle("/css/1920s.css");
-
