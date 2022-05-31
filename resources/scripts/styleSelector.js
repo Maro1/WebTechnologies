@@ -8,6 +8,9 @@ function selectStyle(style) {
 
     document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 }
+$("#medieval").click(function() {
+    selectStyle("/css/1500-1800.css");
+})
 $("#1700s").click(function() {
     selectStyle("/css/1500-1800.css");
 })
