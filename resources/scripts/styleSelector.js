@@ -14,6 +14,9 @@ $("#1700s").click(function() {
 $("#1920s").click(function() {
     selectStyle("/css/1920s.css");
 })
+$("#1980s").click(function() {
+    selectStyle("/css/1980s.css");
+})
 $("#modern").click(function() {
     selectStyle("/css/modern.css");
 })
