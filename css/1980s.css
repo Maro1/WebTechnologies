@@ -1,17 +1,16 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
 
 
 body {
-    margin: 0;
-    font-family: 'VT323', monospace;
-    background-image: url("../images/background-img2.jpg"); 
-    background-attachment: fixed;
-    font-size: 24px;
-    color: white;
-    border-radius: 20%;
-    background-color: #DB3334;
+  margin: 0;
+  font-family: 'VT323', monospace !important;
+  background-image: url("/resources/images/background-img2.jpg");
+  background-attachment: fixed !important;
+  font-size: 24px !important;
+  color: white !important;
+  border-radius: 20%;
+  background-color: #DB3334 !important;
 }
 
 .path {
@@ -44,7 +43,8 @@ body {
   animation-delay: 0.3s;
 }
 
-.pacman::before, .pacman::after {
+.pacman::before,
+.pacman::after {
   content: "";
   display: block;
   height: 0;
@@ -58,7 +58,7 @@ body {
   animation: mouthTop 0.7s ease infinite;
 }
 
-.pacman::after { 
+.pacman::after {
   border-color: yellow;
   border-right-color: transparent;
   border-top-color: transparent;
@@ -79,7 +79,8 @@ body {
   animation: moveForward 5s linear infinite, blinky 0.5s linear infinite;
 }
 
-.ghost::before, .ghost::after {
+.ghost::before,
+.ghost::after {
   content: "";
   position: absolute;
   background: white;
@@ -93,7 +94,8 @@ body {
   left: 28px;
 }
 
-.eyes::before, .eyes::after {
+.eyes::before,
+.eyes::after {
   content: "";
   position: absolute;
   background: blue;
@@ -109,7 +111,7 @@ body {
   left: 30px;
 }
 
-.second-st{
+.second-st {
   padding: 50px;
   border: solid hotpink 4px;
   border-radius: 20%;
@@ -124,55 +126,55 @@ body {
 
 
 img {
-    /** max-width:100%; height:auto; **/
-    max-width: 400px;
-    margin: 0 10px;
-    border: solid black 1px;
-    border-radius: 10%;
+  /** max-width:100%; height:auto; **/
+  max-width: 400px;
+  margin: 0 10px;
+  border: solid black 1px;
+  border-radius: 10%;
 }
 
 h1 {
-    color:white;
-    position:relative;
-    text-shadow: -2px 0 0 #fdff2a,
+  color: white;
+  position: relative;
+  text-shadow: -2px 0 0 #fdff2a,
     -4px 0 0 #df4a42,
     2px 0 0 #91fcfe,
     4px 0 0 #4405fc;
-    animation: blink 2s steps(5, start) infinite
+  animation: blink 2s steps(5, start) infinite
 }
-    
-  @keyframes blink{   
-    to{
-         visibility:hidden;
- 
-     }
- }
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+
+  }
+}
 
 h2 {
-    color:wheat;
-    position: relative;
-    text-shadow: 0px 3px 18px #5649ab;
+  color: wheat;
+  position: relative;
+  text-shadow: 0px 3px 18px #5649ab;
 }
 
 
 a {
-    text-decoration: none;
-    color: lightslategray;
+  text-decoration: none;
+  color: lightslategray;
 }
 
 
 
 .image-desc {
-    border: dashed darkgoldenrod 2px;
-    border-radius: 5%;
-    font-size: 16px;
-    font-style: italic;
-    margin: 5px;
-    transition: all .2s ease-in-out;
+  border: dashed darkgoldenrod 2px;
+  border-radius: 5%;
+  font-size: 16px;
+  font-style: italic;
+  margin: 5px;
+  transition: all .2s ease-in-out;
 
 }
 
- .vl {
+.vl {
   border-left: 6px solid hotpink;
   border-radius: 6px;
   height: 84vh;
@@ -183,20 +185,21 @@ a {
   0% {
     left: -20%;
   }
+
   100% {
     left: 100%;
   }
 }
 
 @keyframes mouthTop {
-  50%{
-      transform: rotate(44deg);
+  50% {
+    transform: rotate(44deg);
   }
 }
 
 @keyframes mouthBottom {
-  50%{
-      transform: rotate(-44deg);
+  50% {
+    transform: rotate(-44deg);
   }
 }
 
