@@ -47,7 +47,7 @@ p {
     padding:0px;
     line-height:1;
 }
-.parent{
+.columns{
     text-align : center;
 }
 
@@ -64,6 +64,12 @@ img {
 
 
 img{
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    filter:sepia(100);
+    border-radius:40px;
+    -webkit-border-radius:15%;
+    width:100%;
+    max-width:600Px;
 }
+#-webkit-filter: grayscale(100%);
+#filter: grayscale(000%);
+
