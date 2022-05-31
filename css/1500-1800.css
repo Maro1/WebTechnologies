@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+html * {
+    font-family: 'MedievalSharp', sans-serif;
+    font-weight:normal;
+}
+
+p::first-letter {
+    float: left;
+  
+    line-height: 50px;
+  
+    font-size: 50px;
+  
+    font-family: 'Ballet';
+  
+    color: #bbb lack;;
+ 
+    padding-top: 12px;
+  
+  
+    padding-bottom: 6px;
+  
+  
+    padding-right: 10px;
+  
+  
+    padding-left: 5px;
+  
+  
+    margin-right: 10px;
+  
+  
+    margin-bottom: -10px;
+    font-weight: bolder;
+
+}
+
+body {
+    background-image: url("https://previews.123rf.com/images/pyzata/pyzata1310/pyzata131000019/22955327-p%C3%A1gina-en-blanco-de-papel-amarillento-manchado-de-%C3%A9poca-antigua.jpg");
+}
+p {
+    margin-left:30px ;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: : 80px;
+    padding:0px;
+    line-height:1;
+}
+.columns{
+    text-align : center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+   }
+   .cat {
+    height:300px;
+    width: 300px;
+   }
+
+
+
+img{
+    filter:sepia(100);
+    border-radius:40px;
+    -webkit-border-radius:15%;
+    width:100%;
+    max-width:600Px;
+}
+#-webkit-filter: grayscale(100%);
+#filter: grayscale(000%);
+
