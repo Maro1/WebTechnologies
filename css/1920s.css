@@ -4,14 +4,14 @@
 
 body {
   margin: 0;
-  background-color: lightsalmon;
-  font-family: 'Space Grotesk', sans-serif;
+  background-color: lightsalmon !important;
+  font-family: 'Space Grotesk', sans-serif !important;
   background-image: url("/resources/images/backgr.jpg");
   letter-spacing: -0.7px;
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   word-spacing: -0.3px;
-  font-size: 19px;
-  color: black;
+  font-size: 19px !important;
+  color: black !important;
 
 
 }
