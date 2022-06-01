@@ -75,31 +75,6 @@ body {
 
 
 
-/** Footer **/
-footer {
-  background-color: white;
-}
-
-.custom-footer {
-  text-align: center;
-  position: fixed;
-  right: 25%;
-  left: 25%;
-  bottom: 10%;
-}
-
-.footer-content {
-  display: flex;
-
-}
-
-.copy-right {
-  font-size: 1.3rem;
-  letter-spacing: .2rem;
-  color: black;
-
-}
-
 /** Top Button **/
 
 .back-to-top {
