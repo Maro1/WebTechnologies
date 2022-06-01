@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/Quentincaps.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+html * {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:normal;
+}
+h1 {
+    column-span:all;
+    text-align:center;
+}
+
 .columns{
     column-count: 4;
     column-gap: 40px; 
@@ -7,14 +22,24 @@
     column-rule: 1px solid #000; /* This is the shorthand version */
     column-rule: 1px dotted # 999999;   
 }
-
-   img{
-    filter:sepia(100);
+body{
+    background-image: url("https://i.pinimg.com/564x/f3/ad/ae/f3adaef3451b78917feca2d22d49d9ec.jpg");
+    background-color: rgb(24, 2, 11);
+}
+img{
+    filter: grayscale(100%);
     border-radius:40px;
     -webkit-border-radius:15%;
     width:100%;
     max-width:600Px;
+    opacity:1;
 }
+
 h1{
     column-span: all;
    }
+
+.
+button{
+    font-size:1px;
+}
