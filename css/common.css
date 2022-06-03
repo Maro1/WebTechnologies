@@ -67,16 +67,28 @@ img {
 /* Footer */
 
 
+/** Footer **/
 .footer {
+<<<<<<< HEAD
     position: static;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
+=======
+>>>>>>> d71f20a1b6e4487d0b229006155f56e5fa858209
     color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: static;
+    text-align: center !important;
+    padding: 0 20px 0 20px;
+}
+
+.copyright  {
     text-align: center;
 }
 
+<<<<<<< HEAD
 @media (max-width:991px) {
     .footer-dark .item.social {
         text-align: center;
@@ -230,3 +242,7 @@ img {
 .add-keyword {
     margin-left: 5%;
 }
+=======
+
+
+>>>>>>> d71f20a1b6e4487d0b229006155f56e5fa858209

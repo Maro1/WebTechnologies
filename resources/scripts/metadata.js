@@ -114,7 +114,9 @@ $(document).on("keyup", "#search-text", function() {
 
 $(document).on("click", "#new-keyword-button", function() {
     let keyword = $("new-keyword-text").val();
-    if (keyword !=)
+    if (keyword != "") {
+      
+    }
 
 })
 
