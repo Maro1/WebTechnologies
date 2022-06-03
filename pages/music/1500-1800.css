@@ -4,6 +4,7 @@ html * {
     font-family: 'MedievalSharp', sans-serif;
     font-weight:normal;
 }
+
 .big-letter::first-letter {
     float: left;
   
@@ -34,7 +35,6 @@ html * {
     font-weight: bolder;
 
 }
-
 
 body {
     background-image: url("https://previews.123rf.com/images/pyzata/pyzata1310/pyzata131000019/22955327-p%C3%A1gina-en-blanco-de-papel-amarillento-manchado-de-%C3%A9poca-antigua.jpg");
