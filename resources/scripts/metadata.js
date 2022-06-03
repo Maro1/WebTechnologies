@@ -3,51 +3,53 @@ $(function(){
 });
 
 async function getKeywords() {
-    let articleWords = document.getElementsByClassName("articles").item(0).textContent.replace(/[\,\.\!\?\(\)\[\]\"]/, "").toLowerCase().split(/\s+/);
+
+    let paragraphs = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6");
+    let articleContent = "";
+    paragraphs.forEach((p) => {
+      articleContent += p.textContent.toLocaleLowerCase();
+    });
 
     let matched = new Set();
     await fetch("/resources/keywords.txt").then(response => response.text()).then(function(text) {
-        articleWords.forEach(function(word) {
-            let keywords = text.split(/\s+/); 
-            if (keywords.find(keyword => keyword.toLowerCase() === word.toLowerCase())) {
-                matched.add(word);
-            }
-    });
+        let keywords = text.split(/\n/);
+        keywords.forEach((kw) => {
+
+          if (articleContent.indexOf(kw.toLocaleLowerCase()) != -1) {
+            matched.add(kw)
+          }
+        })
     });
     return matched;
 }
 
 function getOccurences(word) {
-  let paragraphs = document.getElementsByTagName("p");
-
+  let paragraphs = document.querySelectorAll("p, h1, h2, h3, h4, h5, h6");
 
   let occurences = [];
-  for (i in paragraphs) {
-    let pText = paragraphs[i].textContent;
-    if (pText == undefined) {
-      continue;
-    }
-
-    let pWords = pText.replace(/[\,\.\!\?\(\)\[\]\"]/, "").toLowerCase().split(/\s+/);
-    for (pWord in pWords) {
-      if (pWords[pWord] === word) {
-        occurences.push(paragraphs[i]);
-        break;
+  paragraphs.forEach((p) => {
+    let pText = p.textContent.toLocaleLowerCase();
+    if (pText != undefined) {
+      if (pText.indexOf(word.toLocaleLowerCase()) != -1) {
+        occurences.push(p);
       }
     }
-  }
+  });
   return occurences;
 }
 
 function wordClicked(e) {
-  console.log(e.target.parentNode.innerText);
-  let word = e.target.parentNode.innerText.toLowerCase();
+  let word = e.target.parentNode.innerText;
   let occurences = getOccurences(word);
 
   let keyWordInfo = document.getElementById("num-occurences");
   keyWordInfo.textContent = occurences.length + " occurences:";
 
   let occurenceList = document.getElementById("occurence-list");
+
+  while (occurenceList.firstChild) {
+    occurenceList.removeChild(occurenceList.firstChild);
+  }
 
   for (i in occurences) {
     let o = occurences[i];
@@ -93,10 +95,7 @@ $(document).on("click", "#order-button", async function() {
             list.push(keywordList.childNodes[i].textContent);
     }
 
-    console.log(list);
     list.sort((a, b) => a.localeCompare(b));
-
-    console.log(list);
 
     for (var i = 0; i < keywordList.childNodes.length; i++) {
         let li = document.createElement("li");
@@ -107,12 +106,17 @@ $(document).on("click", "#order-button", async function() {
 });
 
 $(document).on("keyup", "#search-text", function() {
-    console.log("iii");
     var value = $(this).val().toLowerCase();
     $("#keyword-list li").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
+
+$(document).on("click", "#new-keyword-button", function() {
+    let keyword = $("new-keyword-text").val();
+    if (keyword !=)
+
+})
 
 function openMetadata() {
   document.getElementById("metadata-sidebar").style.width = "800px";
