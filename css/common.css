@@ -159,3 +159,114 @@ img {
     font-size: 13px;
     margin-bottom: 0;
 }
+
+/* METADATA VIEWER */
+.metadata-sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #444444;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.metadata-sidebar li input {
+    margin-top: 8px;
+    position: absolute;
+    left: 5px;
+    font: inherit;
+    color: currentColor;
+    width: 0.8em;
+    height: 0.8em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+}
+
+.metadata-sidebar .metadata-closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.metadata-openbtn {
+    position: fixed;
+    left: 5%;
+    top: 5%;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.metadata-openbtn:hover {
+    background-color: #444;
+}
+
+@media screen and (max-height: 450px) {
+    .metadata-sidebar {
+        padding-top: 15px;
+    }
+
+    .metadata-sidebar a {
+        font-size: 18px;
+    }
+}
+
+.keywords {
+    display: flex;
+}
+
+.keyword-list-block {
+    margin-top: 20%;
+    margin-left: 5%;
+    height: 60vh;
+    width: 300px;
+    overflow: scroll;
+    float: left;
+}
+
+.keyword-list-block li a {
+    color: white;
+    text-decoration: none;
+}
+
+.keyword-list-block li a:hover {
+    color: #AAAAAA;
+}
+
+.keyword-list-block li {
+    color: white;
+    text-transform: capitalize;
+    list-style-type: square;
+}
+
+.keyword-info {
+    float: right;
+    margin-top: 20%;
+    margin-left: 5%;
+    height: 60vh;
+    width: 300px;
+    overflow: scroll;
+    float: left;
+}
+
+.keyword-info li a {
+    color: #BBBBBB;
+    text-decoration: none;
+}
+
+.keyword-info li a:hover {
+    color: #999999;
+}
+
+.num-occurences {
+    color: white;
+}
