@@ -67,12 +67,18 @@ img {
 /* Footer */
 
 
+/** Footer **/
 .footer {
-    position: static;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0,0,0,0.1);
     color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: static;
+    text-align: center !important;
+    padding: 0 20px 0 20px;
+}
+
+.copyright  {
     text-align: center;
-  }
+}
+
+
+
