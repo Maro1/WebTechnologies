@@ -68,7 +68,11 @@ function wordClicked(e) {
   }
 } 
 
+let listed = false;
+
 $(document).on("click", "#list-button", async function() {
+    if (listed) return;
+    listed = true;
     var matches = await getKeywords();
 
     var keywordList = document.getElementById("keyword-list");
@@ -92,14 +96,21 @@ $(document).on("click", "#order-button", async function() {
     var list = [];
     console.log(keywordList.childNodes.length);
     for (var i = 0; i < keywordList.childNodes.length; i++) {
-            list.push(keywordList.childNodes[i].textContent);
+        let text = keywordList.childNodes[i].textContent;
+        if (text.trim()) {
+            list.push(text);
+        }
     }
 
     list.sort((a, b) => a.localeCompare(b));
 
     for (var i = 0; i < keywordList.childNodes.length; i++) {
         let li = document.createElement("li");
-        li.appendChild(document.createTextNode(list[i]));
+        let a = document.createElement("a");
+        a.text = list[i];
+        a.setAttribute("href", "#");
+        a.onclick = wordClicked;
+        li.appendChild(a);
         cloned.appendChild(li);
     }
     keywordList.parentNode.replaceChild(cloned, keywordList);
