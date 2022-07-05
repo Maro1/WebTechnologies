@@ -21,7 +21,7 @@ $("#medieval").click(function() {
     selectStyle("/css/1500-1800.css");
 })
 $("#victorian").click(function() {
-    selectStyle("/css/1500-1800.css");
+    selectStyle("/css/XIX.css");
 })
 $("#1920s").click(function() {
     selectStyle("/css/1920s.css");

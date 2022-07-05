@@ -34,7 +34,9 @@ html * {
     font-weight: bolder;
 
 }
-
+button {
+    text-align:center;
+}
 
 body {
     background-image: url("https://previews.123rf.com/images/pyzata/pyzata1310/pyzata131000019/22955327-p%C3%A1gina-en-blanco-de-papel-amarillento-manchado-de-%C3%A9poca-antigua.jpg");
@@ -47,29 +49,16 @@ p {
     padding:0px;
     line-height:1;
 }
+
 .columns{
     text-align : center;
 }
 
-img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-   }
-   .cat {
-    height:300px;
-    width: 300px;
-   }
-
-
 
 img{
-    filter:sepia(100);
+    filter: sepia(100%) blur(0.6px) contrast(2);
     border-radius:40px;
     -webkit-border-radius:15%;
     width:100%;
     max-width:600Px;
 }
-#-webkit-filter: grayscale(100%);
-#filter: grayscale(000%);
-

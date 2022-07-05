@@ -3,9 +3,12 @@
 Do-list
 
 * The metadata
-* Styles: a)1500-1800 b)First half of XX Century
-        c) Second half of XX Century d)Late XX Century – start of XXI Century (print)
-        e)1990-2022 (screen) f) 2030 (print+screen)
+* Styles: a)1500-1800 
+        b)First half of XX Century
+        c) Second half of XX Century 
+        d)Late XX Century – start of XXI Century (print)
+        e)1990-2022 (screen) 
+        f) 2030 (print+screen)
 
 * Disclaimer
 
