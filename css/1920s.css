@@ -12,8 +12,6 @@ body {
   word-spacing: -0.3px;
   font-size: 19px !important;
   color: black !important;
-
-
 }
 
 img {
@@ -28,6 +26,7 @@ h1 {
   position: relative;
   /** text-shadow: 0px 3px 18px #CE5937;  Looks bad **/
 }
+
 
 /** Hover h1 **/
 
@@ -215,10 +214,12 @@ trying bootstrap classes
   margin: 0 10px;
 }
 
+
 .verticalRight {
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
+
 
 /** border animation try 
 
