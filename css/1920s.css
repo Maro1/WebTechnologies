@@ -90,23 +90,20 @@ h2::before {
 
 /** h2 hover ends **/
 
-p {
-  text-decoration: overline;
-  text-shadow: 0px 2px 5px #CE5937;
-}
 
-.border-right {
+p:nth-child(odd) {
   border: 3px solid black;
   border-left: 0;
   padding: 5px;
   margin-bottom: 5px;
 }
 
-.border-left {
-  border: 3px solid black;
+p:nth-child(even) {
+  border: 3px solid red;
   border-right: 0;
   padding: 5px;
 }
+
 
 .image-type-1 {
   transform: rotate(5deg);
@@ -246,7 +243,30 @@ trying bootstrap classes
 
 
 .vl {
-  border-left: 6px solid #DB3334;
+  border-left: 1px solid black;
   border-radius: 6px;
   height: 84vh;
+}
+
+/* scrollbar */
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255, 238, 0) rgb(17, 16, 13);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(17, 16, 13);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 238, 0);
+  border-radius: 20px;
+  border: 3px solid rgb(17, 16, 13);
 }
