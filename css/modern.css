@@ -12,17 +12,21 @@ body {
 
 body * {
     font-family: 'Playfair Display' sans-serif;
+    font-weight: 400;
     font-size: 1.5rem;
     color: black;
 }
 
 p {
-    line-height: 2em;
-    padding-bottom: 1em;
-    padding-top: 1em;
+    line-height: 1.5rem;
     text-align: justify;
+    margin-bottom: 0px !important;
+    padding: 0px;
 }
 
+p:not(.big-letter) {
+    text-indent: 2rem;
+}
 
 h1 {
     font-family: Mooka;
@@ -108,7 +112,6 @@ a:active {
 .answer {
     padding-bottom: 0em;
     padding-top: 0em;
-    padding-bottom: 5rem;
 }
 
 .italic {
