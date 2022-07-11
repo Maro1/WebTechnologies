@@ -386,8 +386,61 @@ button {
   align-items: center;
 }
 
+.color-palette8 {
+  background-color: rgb(59, 157, 255);
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  font-size: 16px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 0px;
+  margin-left: 80px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 96px;
+  padding-left: 96px;
+  padding-right: 96px;
+  padding-top: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+    0 0 3px #fff,
+    0 0 7px #fff,
+    0 0 15px #fff,
+    0 0 30px rgb(118, 115, 255),
+    0 0 40px rgb(158, 173, 255)
+}
 
-
+.color-palette9 {
+  background-color: rgb(255, 115, 115);
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  font-size: 16px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 0px;
+  margin-left: 80px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 96px;
+  padding-left: 96px;
+  padding-right: 96px;
+  padding-top: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+    0 0 3px #fff,
+    0 0 7px #fff,
+    0 0 15px #fff,
+    0 0 30px rgb(255, 115, 115),
+    0 0 40px rgb(255, 158, 158)
+}
 
 /* footer */
 
