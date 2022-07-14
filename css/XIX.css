@@ -21,7 +21,6 @@
 body{
     background-image: url("https://i.pinimg.com/564x/1c/01/87/1c0187a9d371523fcc0e64c20846775d.jpg");
     background-color: rgb(24, 2, 11);
-
 }
 
 p{
@@ -30,6 +29,7 @@ p{
     font-weight: normal;
     line-height: 1;
     text-align: justify;
+    column-count: 4;
 }
 
 img{
@@ -101,3 +101,4 @@ h2{
     font-weight: bolder;
 
 }
+
