@@ -442,6 +442,53 @@ button {
     0 0 40px rgb(255, 158, 158)
 }
 
+
+.color-palette10 {
+  /*Light grayish orange*/
+  background-color: rgb(223,205,190);
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  font-size: 16px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 0px;
+  margin-left: 80px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 96px;
+  padding-left: 96px;
+  padding-right: 96px;
+  padding-top: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-palette11 {
+  /*Soft orange*/
+  background-color: rgb(247,227,189);
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  font-size: 16px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 0px;
+  margin-left: 80px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 96px;
+  padding-left: 96px;
+  padding-right: 96px;
+  padding-top: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* footer */
 
 footer {

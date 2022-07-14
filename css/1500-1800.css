@@ -45,9 +45,10 @@ p {
     margin-left:30px ;
     margin-right: 50px;
     margin-top: 50px;
-    margin-bottom: : 80px;
     padding:0px;
     line-height:1;
+    margin-bottom: 0px !important;
+    text-align: justify;
 }
 
 .columns{
