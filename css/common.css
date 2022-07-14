@@ -234,3 +234,9 @@ img {
 .add-keyword {
     margin-left: 5%;
 }
+
+#myModal {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    background-color: transparent;
+}

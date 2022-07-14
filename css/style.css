@@ -488,6 +488,28 @@ button {
   align-items: center;
 }
 
+.color-palette12 {
+  background-color: black;
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  font-size: 16px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 0px;
+  margin-left: 80px;
+  margin-right: 0px;
+  margin-top: 0px;
+  padding-bottom: 96px;
+  padding-left: 96px;
+  padding-right: 96px;
+  padding-top: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* footer */
 
 footer {
