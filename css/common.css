@@ -46,6 +46,7 @@ img {
     margin: 1%;
     overflow: scroll;
     height: 80vh;
+    max-width: 60vh;
 }
 
 .full-width-image {
@@ -233,10 +234,4 @@ img {
 
 .add-keyword {
     margin-left: 5%;
-}
-
-#myModal {
-    color: black;
-    font-family: "Open Sans", sans-serif;
-    background-color: transparent;
 }

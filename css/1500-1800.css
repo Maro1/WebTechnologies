@@ -57,9 +57,19 @@ p {
 
 
 img{
-    filter: sepia(100%) blur(0.6px) contrast(2);
-    border-radius:40px;
-    -webkit-border-radius:15%;
+    filter: sepia(100%) blur(0.8px) contrast(2.5) brightness(50%);
+    border-radius:80px;
+    -webkit-border-radius:5%;
     width:100%;
-    max-width:600Px;
+    max-width:100%;
+    image-rendering: crisp-edges;
+    opacity: 50%;
 }
+iframe{
+    filter: sepia(100%) blur(0.8px) contrast(2.5) brightness(50%);
+    opacity: 50%;
+    max-width:100%;
+    border-radius:80px;
+}
+
+
