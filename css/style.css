@@ -231,7 +231,7 @@ button {
 
 
 .color-palette1 {
-  background-color: rgb(255, 160, 122);
+  background-color: #ffa07a;
   box-sizing: border-box;
   width: 80px;
   height: 80px;
@@ -253,7 +253,7 @@ button {
 }
 
 .color-palette2 {
-  background-color: rgb(0, 0, 139);
+  background-color: #00008B;
   box-sizing: border-box;
   width: 80px;
   height: 80px;
@@ -275,7 +275,7 @@ button {
 }
 
 .color-palette3 {
-  background-color: rgb(139, 0, 0);
+  background-color: #8b0000;
   box-sizing: border-box;
   width: 80px;
   height: 80px;
@@ -297,7 +297,7 @@ button {
 }
 
 .color-palette4 {
-  background-color: hotpink;
+  background-color: #fe4b63;
   box-sizing: border-box;
   width: 80px;
   height: 80px;
@@ -319,7 +319,7 @@ button {
 }
 
 .color-palette5 {
-  background-color: black;
+  background-color: #382326;
   box-sizing: border-box;
   width: 80px;
   height: 80px;
@@ -341,8 +341,7 @@ button {
 }
 
 .color-palette6 {
-  background-color: white;
-  border: solid black 1px;
+  background-color: #fef7ed;
   box-sizing: border-box;
   width: 80px;
   height: 80px;
