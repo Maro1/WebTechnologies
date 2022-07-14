@@ -13,9 +13,9 @@ async function getKeywords() {
     let matched = new Set();
     await fetch("/resources/keywords.txt").then(response => response.text()).then(function(text) {
         let keywords = text.split(/\n/);
-        keywords.forEach((kw) => {
 
-          if (articleContent.indexOf(kw.toLocaleLowerCase()) != -1) {
+        keywords.forEach((kw) => {
+          if (articleContent.includes(kw.trim().toLocaleLowerCase())) {
             matched.add(kw)
           }
         })
@@ -59,6 +59,7 @@ function wordClicked(e) {
     a.text = o.textContent.substring(0, 50) + "..."; 
     a.setAttribute("href", "#");
     a.onclick = () => {
+      console.log(o);
       closeMetadata();
       o.scrollIntoView();
     }
@@ -94,7 +95,6 @@ $(document).on("click", "#order-button", async function() {
     var cloned = keywordList.cloneNode(false);
 
     var list = [];
-    console.log(keywordList.childNodes.length);
     for (var i = 0; i < keywordList.childNodes.length; i++) {
         let text = keywordList.childNodes[i].textContent;
         if (text.trim()) {
