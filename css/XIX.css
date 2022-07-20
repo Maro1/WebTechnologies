@@ -53,6 +53,7 @@ h1{
     font-weight:normal;
 }
 
+
 .image-desc {
     border: groove grey 2px;
     border-radius: 5%;
@@ -67,6 +68,14 @@ button{
 }
 
 h2{
+    border-bottom:10px groove grey;
+    border-top:10px groove grey;
+    padding-top: 5px;
+    font-family: 'Victorian', sans-serif;
+    font-weight:normal;
+    
+}
+h3{
     border-bottom:10px groove grey;
     border-top:10px groove grey;
     padding-top: 5px;
@@ -102,3 +111,12 @@ h2{
 
 }
 
+small{
+    font-family: 'Serif', sans-serif;
+    font-weight:normal
+}
+
+button{
+    background-image: url("https://i.pinimg.com/564x/1c/01/87/1c0187a9d371523fcc0e64c20846775d.jpg");
+    text-align: center;
+}
