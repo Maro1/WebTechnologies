@@ -36,7 +36,6 @@ $("#future").click(function() {
     selectStyle("/css/future.css");
 })
 
-const showOnPx = 100;
 const backToTopButton = document.querySelector(".back-to-top")
 
 const scrollContainer = () => {
@@ -44,7 +43,7 @@ const scrollContainer = () => {
 };
 
 document.addEventListener("scroll", () => {
-  if (scrollContainer().scrollTop > showOnPx) {
+  if (scrollContainer().scrollTop > 100) {
     backToTopButton.classList.remove("hidden")
   } else {
     backToTopButton.classList.add("hidden")
@@ -55,7 +54,9 @@ const goToTop = () => {
   document.body.scrollIntoView();
 };
 
-backToTopButton.addEventListener("click", goToTop)
+if (backToTopButton != undefined) {
+  backToTopButton.addEventListener("click", goToTop)
+}
 
 
 // Disclaimer
